@@ -26,7 +26,7 @@ export async function getManifest() {
   }
 
   if (isDev) {
-    manifest.content_security_policy = `script-src \'self\' http://localhost:${port}; object-src \'self\'`
+    manifest.content_security_policy = `script-src \'self\' \'unsafe-eval\' http://localhost:${port}; object-src \'self\'`
   }
 
   return manifest
