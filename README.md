@@ -1,7 +1,6 @@
 ![](https://mimalef70.github.io/fontara/images/demo/logo.svg)
 
-# FontARA Version 3.0 
-
+# FontARA Version 3.0
 
 ![](https://mimalef70.github.io/fontara/images/demo/screens/TwitterBanner.jpg)
 
@@ -15,7 +14,7 @@ Are you bored of seeing the same fonts all the time? Well, we have a way of chan
 
 Have fun experimenting with different fonts and settings with your browser. Find something that suits your personality and make your browser your own.
 
-------
+---
 
 ### Features
 
@@ -27,7 +26,8 @@ Have fun experimenting with different fonts and settings with your browser. Find
 - It is completely [**Open Source**](https://github.com/mimalef70/fontara)
 - It is **Free of Charge**
 
----------------
+---
+
 ### Download Links
 
 <a href="https://chrome.google.com/webstore/detail/dcjdhicepiklefpimapdkbaeoocniemc/"><img src="https://mimalef70.github.io/fontara/images/demo/browsers/chrome.svg" alt="Google Chrome" width="45" /></a>
@@ -36,14 +36,15 @@ Have fun experimenting with different fonts and settings with your browser. Find
 <a href="#"><img src="https://mimalef70.github.io/fontara/images/demo/browsers/safari.svg" alt="Safari" width="45" /></a>
 <a href="#"><img src="https://mimalef70.github.io/fontara/images/demo/browsers/microsoft-edge.svg" alt="Microsoft Edge" width="45" /></a>
 
+---
 
----------------
 ### Contacts
+
 - [**FontARA on GitHub**](https://github.com/mimalef70/fontara)
 - [**Mostafa Alahyari on Twitter**](https://twitter.com/mimalef70)
 - [**For More Details**](https://mimalef70.github.io/fontara/)
 
-------
+---
 
 ### Acknowledgment:
 

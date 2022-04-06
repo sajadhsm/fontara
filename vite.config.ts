@@ -1,22 +1,18 @@
-import { defineConfig, UserConfig } from "vite"
+import { defineConfig, UserConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
 
-import { r, port, isDev } from "./scripts/utils"
+import { r, port, isDev } from './scripts/utils'
 
 export const sharedConfig: UserConfig = {
   root: r('src'),
   resolve: {
     alias: {
-      '~/': `${r('src')}/`,
+      '~/': `${r('src')}/`
     }
   },
-  plugins: [
-    Vue()
-  ],
+  plugins: [Vue()],
   optimizeDeps: {
-    include: [
-      'vue'
-    ]
+    include: ['vue']
   }
 }
 
@@ -26,22 +22,22 @@ export default defineConfig(({ command }) => ({
   server: {
     port,
     hmr: {
-      host: 'localhost',
-    },
+      host: 'localhost'
+    }
   },
   build: {
     outDir: r('extension/dist'),
     emptyOutDir: false,
     sourcemap: isDev ? 'inline' : false,
-    minify: "terser",
+    minify: 'terser',
     terserOptions: {
-      mangle: false,
+      mangle: false
     },
     rollupOptions: {
       input: {
         popup: r('src/popup/index.html'),
-        options: r('src/options/index.html'),
-      },
-    },
+        options: r('src/options/index.html')
+      }
+    }
   }
 }))

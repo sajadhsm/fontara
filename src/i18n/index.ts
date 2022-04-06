@@ -2,7 +2,7 @@ import { createI18n } from 'vue-i18n'
 
 const messages = {
   en: {
-    hello: 'Hello',
+    hello: 'Hello'
   },
   fa: {
     hello: 'سلام'
