@@ -12,7 +12,7 @@ export const sharedConfig: UserConfig = {
   },
   plugins: [Vue()],
   optimizeDeps: {
-    include: ['vue']
+    include: ['vue', 'webextension-polyfill']
   }
 }
 

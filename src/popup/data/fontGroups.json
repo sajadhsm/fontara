@@ -1,0 +1,72 @@
+[
+  {
+    "name": "فونت های صابر راستی کردار",
+    "link": "http://rastikerdar.blog.ir/?ref=fontara",
+    "fonts": [
+      {
+        "label": "وزیر",
+        "value": "Vazir"
+      },
+      {
+        "label": "شبنم",
+        "value": "Shabnam"
+      },
+      {
+        "label": "ساحل",
+        "value": "Sahel"
+      },
+      {
+        "label": "پرستو",
+        "value": "Parastoo"
+      },
+      {
+        "label": "گندم",
+        "value": "Gandom"
+      },
+      {
+        "label": "تنها",
+        "value": "Tanha"
+      }
+    ]
+  },
+  {
+    "name": "فونت های صالح سوزنچی",
+    "link": "http://font-store.ir/?ref=fontara",
+    "fonts": [
+      {
+        "label": "بهداد",
+        "value": "Behdad"
+      },
+      {
+        "label": "نیکا",
+        "value": "Nika"
+      },
+      {
+        "label": "گنجنامه",
+        "value": "GanjNamehSans"
+      },
+      {
+        "label": "شهاب",
+        "value": "Shahab"
+      }
+    ]
+  },
+  {
+    "name": "فونت های امین عابدی",
+    "link": "https://www.opentypeshop.com/?ref=fontara",
+    "fonts": [
+      {
+        "label": "آذرمهر",
+        "value": "AzarMehr"
+      },
+      {
+        "label": "میخک",
+        "value": "Mikhak"
+      },
+      {
+        "label": "استعداد",
+        "value": "Estedad"
+      }
+    ]
+  }
+]

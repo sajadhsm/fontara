@@ -22,7 +22,9 @@ export async function getManifest() {
       page: './dist/options/index.html',
       open_in_tab: true,
       chrome_style: false
-    }
+    },
+
+    permissions: ['storage']
   }
 
   if (isDev) {
