@@ -14,6 +14,11 @@ export async function getManifest() {
     version: pkg.version,
     author: 'Mostafa Alahyari',
 
+    background: {
+      page: './dist/background/index.html',
+      persistent: false
+    },
+
     browser_action: {
       default_popup: './dist/popup/index.html'
     },

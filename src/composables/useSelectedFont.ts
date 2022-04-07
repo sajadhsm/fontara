@@ -1,7 +1,7 @@
 import { ref, watch } from 'vue'
 import { storageLocal } from '~/services/storageLocal'
 
-const STORAGE_FONT_KEY = 'font'
+export const STORAGE_FONT_KEY = 'font'
 
 export const useSelectedFont = () => {
   const font = ref('')

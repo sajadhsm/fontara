@@ -4,7 +4,7 @@ import chokidar from 'chokidar'
 import { r, port, isDev, log } from './utils'
 
 async function stubIndexHtml() {
-  const views = ['popup', 'options']
+  const views = ['popup', 'options', 'background']
 
   for (const view of views) {
     await fs.ensureDir(r(`extension/dist/${view}`))
