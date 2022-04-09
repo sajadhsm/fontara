@@ -3,6 +3,8 @@ import fs from 'fs-extra'
 import chokidar from 'chokidar'
 import { r, port, isDev, log } from './utils'
 
+import { prepareContentScripts } from './contentScripts'
+
 async function stubIndexHtml() {
   const views = ['popup', 'options', 'background']
 
@@ -32,4 +34,8 @@ if (isDev) {
   chokidar
     .watch([r('src/manifest.ts'), r('package.json')])
     .on('change', writeManifest)
+  // TODO: Only execute for the changed content script
+  chokidar.watch(r('src/contentScripts/**')).on('change', prepareContentScripts)
 }
+
+prepareContentScripts()

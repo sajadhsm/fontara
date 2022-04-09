@@ -29,7 +29,12 @@ export async function getManifest() {
       chrome_style: false
     },
 
-    permissions: ['storage']
+    permissions: ['storage'],
+
+    web_accessible_resources: [
+      './assets/fonts/*.woff',
+      './assets/fonts/*.woff2'
+    ]
   }
 
   if (isDev) {
