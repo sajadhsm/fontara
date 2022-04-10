@@ -1,1 +1,3 @@
-console.log('Hello twitter :)')
+import { initialize } from '~/contentScripts/inject'
+
+initialize()

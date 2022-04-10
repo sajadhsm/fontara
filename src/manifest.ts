@@ -15,30 +15,34 @@ export async function getManifest() {
     author: 'Mostafa Alahyari',
 
     background: {
-      page: './dist/background/index.html',
+      page: 'dist/background/index.html',
       persistent: false
     },
 
     browser_action: {
-      default_popup: './dist/popup/index.html'
+      default_popup: 'dist/popup/index.html'
     },
 
     options_ui: {
-      page: './dist/options/index.html',
+      page: 'dist/options/index.html',
       open_in_tab: true,
       chrome_style: false
     },
 
     permissions: ['storage'],
 
-    web_accessible_resources: [
-      './assets/fonts/*.woff',
-      './assets/fonts/*.woff2'
-    ]
-  }
+    web_accessible_resources: ['assets/fonts/*.woff', 'assets/fonts/*.woff2'],
 
-  if (isDev) {
-    manifest.content_security_policy = `script-src \'self\' \'unsafe-eval\' http://localhost:${port}; object-src \'self\'`
+    content_security_policy: [
+      "object-src 'self'",
+      "font-src 'self' data:",
+      "style-src 'self' 'unsafe-inline'",
+      `script-src 'self' 'unsafe-eval' ${
+        isDev ? `http://localhost:${port}` : ''
+      }`
+    ]
+      .map((s) => s.trim())
+      .join(';')
   }
 
   return manifest
