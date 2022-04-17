@@ -1,3 +1,3 @@
 import { initialize } from '~/contentScripts/inject'
 
-initialize()
+initialize('virgool')

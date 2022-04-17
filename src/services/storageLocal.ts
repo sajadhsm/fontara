@@ -5,7 +5,11 @@ export const storageLocal = {
     return (await storage.local.get(key))[key]
   },
 
-  setItem(key: string, value: string) {
+  getItems(...keys: string[]) {
+    return storage.local.get(keys)
+  },
+
+  setItem(key: string, value: string | boolean) {
     return storage.local.set({ [key]: value })
   },
 

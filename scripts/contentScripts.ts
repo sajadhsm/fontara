@@ -97,17 +97,16 @@ ${directories
   .map((dir) => `import ${dir}Logo from './injects/${dir}/logo.png'`)
   .join('\n')}
 
-export default [
+export default {
   ${directories
     .map(
-      (dir) => `{
-    name: '${dir}',
+      (dir) => `${dir}: {
     displayName: '${displayNames.get(dir)}',
     logo: ${dir}Logo
   }`
     )
     .join(',\n\t')}
-]
+}
 `
   await fs.writeFile(r('src/contentScripts/injectsData.ts'), data, 'utf-8')
 }

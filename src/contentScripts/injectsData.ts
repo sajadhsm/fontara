@@ -6,15 +6,13 @@
 import twitterLogo from './injects/twitter/logo.png'
 import virgoolLogo from './injects/virgool/logo.png'
 
-export default [
-  {
-    name: 'twitter',
+export default {
+  twitter: {
     displayName: 'Twitter',
     logo: twitterLogo
   },
-	{
-    name: 'virgool',
+	virgool: {
     displayName: 'Virgool',
     logo: virgoolLogo
   }
-]
+}

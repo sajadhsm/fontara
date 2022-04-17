@@ -1,13 +1,22 @@
 <template>
-  <ul>
-    <li v-for="site of injectsData" :key="site.name">
-      <img :src="site.logo" :alt="site.name" />
-    </li>
-  </ul>
+  <div>
+    <ul>
+      <li v-for="(site, index) of sitesData" :key="index">
+        <button @click="toggleActiveStatus(site.name)">
+          <img :src="site.logo" :alt="site.name" />
+          {{ site.name }}: {{ site.isActive }}
+        </button>
+      </li>
+    </ul>
+
+    {{ sitesData.length }}
+  </div>
 </template>
 
 <script setup lang="ts">
-import injectsData from '~/contentScripts/injectsData'
+import { useSitesActiveStatus } from '~/composables/useSitesActiveStatus'
+
+const { data: sitesData, toggleActiveStatus } = useSitesActiveStatus()
 </script>
 
 <style scoped>
