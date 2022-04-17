@@ -35,7 +35,9 @@ if (isDev) {
     .watch([r('src/manifest.ts'), r('package.json')])
     .on('change', writeManifest)
   // TODO: Only execute for the changed content script
-  chokidar.watch(r('src/contentScripts/**')).on('change', prepareContentScripts)
+  chokidar
+    .watch(r('src/contentScripts/injects/**'))
+    .on('change', prepareContentScripts)
 }
 
 prepareContentScripts()

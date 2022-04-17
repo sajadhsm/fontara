@@ -10,6 +10,9 @@ export const sharedConfig: UserConfig = {
       '~/': `${r('src')}/`
     }
   },
+  define: {
+    __DEV__: isDev
+  },
   plugins: [Vue()],
   optimizeDeps: {
     include: ['vue', 'webextension-polyfill']
