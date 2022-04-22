@@ -20,8 +20,24 @@
 </template>
 
 <script setup lang="ts">
-import fontGroups from '~/popup/data/fontGroups.json'
+import { computed } from 'vue'
+
 import { useSelectedFont } from '~/composables/useSelectedFont'
+import { useCustomFont } from '~/composables/useCustomFont'
+
+import staticFonts from '~/popup/data/fontGroups.json'
 
 const selectedFont = useSelectedFont()
+const { fonts } = useCustomFont()
+
+const fontGroups = computed(() => [
+  ...staticFonts,
+  {
+    name: 'فونت‌های دلخواه',
+    fonts: fonts.value.map(({ name }) => ({
+      label: name,
+      value: name
+    }))
+  }
+])
 </script>

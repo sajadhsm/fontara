@@ -8,3 +8,8 @@ declare module '*.vue' {
 }
 
 declare const __DEV__: boolean
+
+interface CustomFont {
+  name: string
+  base64: string
+}

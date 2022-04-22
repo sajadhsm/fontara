@@ -1,11 +1,6 @@
-import { ref } from 'vue'
+import { readonly, ref } from 'vue'
 
 import { storageLocal } from '~/services/storageLocal'
-
-export interface CustomFont {
-  name: string
-  base64: string
-}
 
 const CUSTOM_FONTS_STORAGE_KEY = 'customFonts'
 
@@ -34,5 +29,5 @@ export function useCustomFont() {
     storageLocal.setItem(CUSTOM_FONTS_STORAGE_KEY, [...fonts.value])
   }
 
-  return { fonts, addFont, removeFont }
+  return { fonts: readonly(fonts), addFont, removeFont }
 }
