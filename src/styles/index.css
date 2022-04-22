@@ -6,7 +6,7 @@
   /* Override tailwind default font */
   /* Override default chrome injected stylesheet */
   html, body {
-    font-family: Vazir, system-ui, sans-serif;
+    font-family: Shabnam, system-ui, sans-serif;
     font-size: 100%;
   }
 }

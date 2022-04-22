@@ -9,7 +9,7 @@ export const storageLocal = {
     return storage.local.get(keys)
   },
 
-  setItem(key: string, value: string | boolean) {
+  setItem<T>(key: string, value: T) {
     return storage.local.set({ [key]: value })
   },
 

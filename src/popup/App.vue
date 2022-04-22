@@ -3,6 +3,7 @@
     <FontSelector />
     <button
       class="bg-blue-100 w-full py-2 rounded-sm my-3 text-blue-600 font-bold"
+      @click="runtime.openOptionsPage()"
     >
       افزودن فونت دلخواه
     </button>
@@ -17,6 +18,8 @@
 </template>
 
 <script setup lang="ts">
+import { runtime } from 'webextension-polyfill'
+
 import FontSelector from './components/FontSelector.vue'
 import Sites from './components/Sites.vue'
 </script>
