@@ -4,6 +4,9 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import i18n from '~/i18n'
 
+import '~/styles/fonts.css'
+import '~/styles/index.css'
+
 const baseElem = document.createElement('base')
 baseElem.href = __DEV__ ? 'http://localhost:3303' : runtime.getURL('/')
 document.head.appendChild(baseElem)

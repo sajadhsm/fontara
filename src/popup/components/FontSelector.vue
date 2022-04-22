@@ -1,5 +1,8 @@
 <template>
-  <select v-model="selectedFont">
+  <select
+    v-model="selectedFont"
+    class="w-full bg-white shadow-select hover:shadow-select-md rounded-[3px] px-4 py-2 outline-none"
+  >
     <optgroup
       v-for="(group, groupIndex) of fontGroups"
       :key="groupIndex"
