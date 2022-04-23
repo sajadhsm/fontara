@@ -1,5 +1,6 @@
 import { defineConfig, UserConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
+import Icons from 'unplugin-icons/vite'
 
 import { r, port, isDev } from './scripts/utils'
 
@@ -13,7 +14,13 @@ export const sharedConfig: UserConfig = {
   define: {
     __DEV__: isDev
   },
-  plugins: [Vue()],
+  plugins: [
+    Vue(),
+    Icons({
+      compiler: 'vue3',
+      autoInstall: true
+    })
+  ],
   optimizeDeps: {
     include: ['vue', 'webextension-polyfill']
   }

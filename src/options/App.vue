@@ -1,7 +1,7 @@
 <template>
   <main class="bg-white max-w-2xl p-5 mx-2 rounded shadow-md">
     <div class="text-center bg-slate-100 p-5">
-      <h1 class="text-xl font-bold mb-2">{{ t('options.addCustomFont') }}</h1>
+      <h1 class="text-xl font-bold mb-2">{{ t('common.addCustomFont') }}</h1>
       <p>{{ t('options.addCustomFontDescription') }}</p>
     </div>
 

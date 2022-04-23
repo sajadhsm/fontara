@@ -30,14 +30,20 @@ import staticFonts from '~/popup/data/fontGroups.json'
 const selectedFont = useSelectedFont()
 const { fonts } = useCustomFont()
 
-const fontGroups = computed(() => [
-  ...staticFonts,
-  {
-    name: 'فونت‌های دلخواه',
-    fonts: fonts.value.map(({ name }) => ({
-      label: name,
-      value: name
-    }))
+const fontGroups = computed(() => {
+  const allFonts = [...staticFonts]
+
+  if (fonts.value.length) {
+    allFonts.push({
+      name: 'فونت‌های دلخواه',
+      link: '',
+      fonts: fonts.value.map(({ name }) => ({
+        label: name,
+        value: name
+      }))
+    })
   }
-])
+
+  return allFonts
+})
 </script>
